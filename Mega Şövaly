@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+class Karakter{
+    public:
+    string adi;
+    int can;
+    int hasar;
+    void kosma(){
+        cout<<adi<<" Koşuyor "<<endl;
+    }
+    void durma(){
+        cout<<adi<<" Durdu "<<endl;
+    }
+    
+    
+    void vurma(){
+        cout<<adi<<" Vurmaya başladı "<<endl;
+    }
+};
+
+int main()
+{
+    
+    
+    Karakter karakter1;
+    karakter1.adi="Mega Şövalye";
+    karakter1.can=4000;
+    karakter1.hasar=6000;
+    cout<<"Karakter1:"<<karakter1.adi<<endl;
+     
+    
+    karakter1.kosma();
+    karakter1.durma();
+    karakter1.vurma();
+    return 0;
+}
